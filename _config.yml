@@ -45,6 +45,8 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
+toc:
+  maxDepth: 3
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
