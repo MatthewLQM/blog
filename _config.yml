@@ -3,16 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: 小浪明的个人主页
+subtitle: Matthew's Blog
+description: 
+author: 小浪明
+language: 
+  - zh-tw
+  - en
+timezone:	Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://blog.xiaolangming.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -26,6 +28,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -77,4 +80,25 @@ theme: yilia
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: git@github.com:MatthewLQM/MatthewLQM.github.io.git
+  branch: master
+  
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
